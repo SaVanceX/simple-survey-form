@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform<p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Full Name
+          <input required id="name" name="full-name" type="text" placeholder="Enter Full Name"/>
+          </label>
+          <label id="email-label">Email
+          <input required id="email" name="email" type="email" placeholder="Enter Email"/>
+          </label>
+          <label id="number-label"/>Age
+          <input id="number" type="number" min="13" max="125" placeholder="Age"/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label> What is your favorite programming language?
+            <select id="dropdown">
+              <option>Select</option>
+              <option>JavaScript</option>
+              <option>Python</option>
+              <option>Java</option>
+              <option>C++</option>
+            <select>
+          </label>
+
+          <label> Would you consider learning a new programming language?
+            <label>
+              <input class="inline" type="radio" name="yes-maybe-no" value="yes">Yes
+            </label>
+            <label>
+              <input class="inline" type="radio" name="yes-maybe-no" value="maybe">Maybe
+            </label>
+            <label>
+              <input class="inline" type="radio" name="yes-maybe-no" value ="no">No
+            </label>
+        </fieldset>
+        <fieldset>
+          <label>What would you like to learn more about? 
+          <label><input class="inline" id="check-box-1" value="front-end-dev" type="checkbox" name="check-box-1">Front-end Development</label>
+          <label><input class="inline" id="check-box-2" value="back-end-dev" type="checkbox" name="check-box-2">Back-end Development</label>
+          <label><input class="inline" id="check-box-3" value="git" type="checkbox" name="check-box-3">Git</label>
+                  <label>Additional Comments?</label>
+        <textarea placeholder="additional comments"></textarea>
+        </fieldset>
+        <input id="submit" type="submit">
+      </form>
+  </body>
+</html>
